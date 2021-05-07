@@ -16,6 +16,12 @@
 		A0CF3A7B261C9296004E62F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0CF3A79261C9296004E62F9 /* LaunchScreen.storyboard */; };
 		A0CF3A86261C9296004E62F9 /* Self_Care_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3A85261C9296004E62F9 /* Self_Care_AppTests.swift */; };
 		A0CF3A91261C9297004E62F9 /* Self_Care_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3A90261C9297004E62F9 /* Self_Care_AppUITests.swift */; };
+		A0CF3AA2261F3925004E62F9 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3AA1261F3925004E62F9 /* ScheduleViewController.swift */; };
+		A0CF3AA7261F3999004E62F9 /* GoodPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3AA6261F3999004E62F9 /* GoodPicturesViewController.swift */; };
+		A0CF3AAC261F39DF004E62F9 /* NiceQuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3AAB261F39DF004E62F9 /* NiceQuoteViewController.swift */; };
+		A0CF3AB1261F3A8A004E62F9 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3AB0261F3A8A004E62F9 /* PersonalInfoViewController.swift */; };
+		A0CF3AB6261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3AB5261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift */; };
+		A0CF3ABB26248458004E62F9 /* EventMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3ABA26248458004E62F9 /* EventMaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		A0CF3A8C261C9297004E62F9 /* Self Care AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Self Care AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CF3A90261C9297004E62F9 /* Self_Care_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Self_Care_AppUITests.swift; sourceTree = "<group>"; };
 		A0CF3A92261C9297004E62F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0CF3AA1261F3925004E62F9 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		A0CF3AA6261F3999004E62F9 /* GoodPicturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodPicturesViewController.swift; sourceTree = "<group>"; };
+		A0CF3AAB261F39DF004E62F9 /* NiceQuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiceQuoteViewController.swift; sourceTree = "<group>"; };
+		A0CF3AB0261F3A8A004E62F9 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
+		A0CF3AB5261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoEditorViewController.swift; sourceTree = "<group>"; };
+		A0CF3ABA26248458004E62F9 /* EventMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,12 @@
 				A0CF3A6D261C9295004E62F9 /* SceneDelegate.swift */,
 				A0CF3A6F261C9295004E62F9 /* ViewController.swift */,
 				A0CF3A71261C9295004E62F9 /* Main.storyboard */,
+				A0CF3ABA26248458004E62F9 /* EventMaker.swift */,
+				A0CF3AB5261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift */,
+				A0CF3AB0261F3A8A004E62F9 /* PersonalInfoViewController.swift */,
+				A0CF3AAB261F39DF004E62F9 /* NiceQuoteViewController.swift */,
+				A0CF3AA6261F3999004E62F9 /* GoodPicturesViewController.swift */,
+				A0CF3AA1261F3925004E62F9 /* ScheduleViewController.swift */,
 				A0CF3A77261C9296004E62F9 /* Assets.xcassets */,
 				A0CF3A79261C9296004E62F9 /* LaunchScreen.storyboard */,
 				A0CF3A7C261C9296004E62F9 /* Info.plist */,
@@ -261,8 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0CF3AAC261F39DF004E62F9 /* NiceQuoteViewController.swift in Sources */,
+				A0CF3AB6261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift in Sources */,
+				A0CF3AA2261F3925004E62F9 /* ScheduleViewController.swift in Sources */,
 				A0CF3A70261C9295004E62F9 /* ViewController.swift in Sources */,
+				A0CF3AA7261F3999004E62F9 /* GoodPicturesViewController.swift in Sources */,
+				A0CF3AB1261F3A8A004E62F9 /* PersonalInfoViewController.swift in Sources */,
 				A0CF3A6C261C9295004E62F9 /* AppDelegate.swift in Sources */,
+				A0CF3ABB26248458004E62F9 /* EventMaker.swift in Sources */,
 				A0CF3A76261C9295004E62F9 /* Self_Care_App.xcdatamodeld in Sources */,
 				A0CF3A6E261C9295004E62F9 /* SceneDelegate.swift in Sources */,
 			);
