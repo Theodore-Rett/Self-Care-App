@@ -14,7 +14,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var nameEnter: UITextField!
     @IBOutlet weak var timeInput: UIDatePicker!
     
-    var schedule = [String, Date]
+    var schedule : [String : Date] = [:]
     
     let dateFormater = DateFormatter()
     
@@ -53,15 +53,19 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell =  tableView.dequeueReusableCell(withIdentifier: "MyCell")!
-        cell.textLabel?.text = (schedule[indexPath.row]).getName()
-        //cell.detailTextLabel?.text = "\((schedule[indexPath.row]).getTime())"
-        cell.detailTextLabel?.text = dateFormater.string(from: (schedule[indexPath.row]).getTime())
+        
+        cell.textLabel?.text = ((schedule[indexPath.row]) as! String)
+        
+        cell.detailTextLabel?.text = dateFormater.string(from: (schedule[indexPath.row]) as! Date)
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if(editingStyle == .delete){
-            schedule.remove(at: indexPath.row)
+            
+            schedule.remove(at: indexPath)
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
