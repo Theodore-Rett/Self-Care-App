@@ -14,7 +14,11 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var nameEnter: UITextField!
     @IBOutlet weak var timeInput: UIDatePicker!
     
-    var schedule : [String : Date] = [:]
+    //var schedule : [String : Date] = [:]
+    
+    var schedule : [(event : String, time : Date)] = []
+    
+    
     
     let dateFormater = DateFormatter()
     
@@ -37,7 +41,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBAction func addButton(_ sender: UIButton) {
         if(nameEnter.text != nil){
-            
+            schedule.append((event: nameEnter.text!, time: timeInput.date))
             listDisplay.reloadData()
         }
     }
@@ -52,23 +56,38 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell =  tableView.dequeueReusableCell(withIdentifier: "MyCell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell")!
         
-        cell.textLabel?.text = ((schedule[indexPath.row]) as! String)
+        //cell.textLabel?.text = (schedule[indexPath.row].String)
         
-        cell.detailTextLabel?.text = dateFormater.string(from: (schedule[indexPath.row]) as! Date)
+        cell.textLabel?.text = schedule[indexPath.row].event
+        
+        cell.detailTextLabel?.text = dateFormater.string(from: schedule[indexPath.row].time)
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if(editingStyle == .delete){
-            
-            schedule.remove(at: indexPath)
-            
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        }
-    }
+    
+    
+    
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell =  tableView.dequeueReusableCell(withIdentifier: "MyCell")!
+//
+//        cell.textLabel?.text = ((schedule[indexPath.row]) as! String)
+//
+//        cell.detailTextLabel?.text = dateFormater.string(from: (schedule[indexPath.row]) as! Date)
+//
+//        return cell
+//    }
+    
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+//        if(editingStyle == .delete){
+//
+//            schedule.remove(at: indexPath)
+//
+//            tableView.deleteRows(at: [indexPath], with: .fade)
+//        }
+//    }
 
     /*
     // MARK: - Navigation
