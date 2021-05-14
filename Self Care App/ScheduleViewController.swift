@@ -32,6 +32,9 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         
         dateFormater.timeStyle = .short
         
+        if let list = defaults.object(forKey: "schedule"){
+            schedule = list as! [(event : String, time : Date)]
+        }
         
        // if let list = defults.object(forKey: "save"){
        //     schedule = list as! [EventMaker]
@@ -47,7 +50,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     @IBAction func saveButton(_ sender: UIButton) {
-        
+        defaults.set(schedule, forKey: "schedule")
     }
     
     
