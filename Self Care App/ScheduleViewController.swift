@@ -27,9 +27,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         listDisplay.dataSource = self
         
         super.viewDidLoad()
-        
         dateFormater.timeStyle = .short
-        
         if let data = UserDefaults.standard.data(forKey: "savedEvents") {
             do {
                 // Create JSON Decoder
@@ -58,6 +56,10 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         if(nameEnter.text != nil){
             //schedule.append((event: nameEnter.text!, time: timeInput.date))
             schedule.append(EventMaker(inName: nameEnter.text!, inTime: timeInput.date))
+            
+            
+            
+            
             listDisplay.reloadData()
         }
     }
@@ -103,6 +105,14 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete){
+            schedule.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
     
 //    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 //        if(editingStyle == .delete){
