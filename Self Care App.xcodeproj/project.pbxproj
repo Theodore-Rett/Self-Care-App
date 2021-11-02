@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20016FD427318307006AE0C4 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20016FD327318307006AE0C4 /* UserProfile.swift */; };
 		A0CF3A6C261C9295004E62F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3A6B261C9295004E62F9 /* AppDelegate.swift */; };
 		A0CF3A6E261C9295004E62F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3A6D261C9295004E62F9 /* SceneDelegate.swift */; };
 		A0CF3A70261C9295004E62F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3A6F261C9295004E62F9 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20016FD327318307006AE0C4 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		A0CF3A68261C9295004E62F9 /* Self Care App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Self Care App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CF3A6B261C9295004E62F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0CF3A6D261C9295004E62F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				A0CF3A6D261C9295004E62F9 /* SceneDelegate.swift */,
 				A0CF3A6F261C9295004E62F9 /* ViewController.swift */,
 				A0CF3A71261C9295004E62F9 /* Main.storyboard */,
+				20016FD327318307006AE0C4 /* UserProfile.swift */,
 				A0CF3ABA26248458004E62F9 /* EventMaker.swift */,
 				A0CF3AB5261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift */,
 				A0CF3AB0261F3A8A004E62F9 /* PersonalInfoViewController.swift */,
@@ -278,6 +281,7 @@
 			files = (
 				A0CF3AB6261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift in Sources */,
 				A0CF3AA2261F3925004E62F9 /* ScheduleViewController.swift in Sources */,
+				20016FD427318307006AE0C4 /* UserProfile.swift in Sources */,
 				A0CF3A70261C9295004E62F9 /* ViewController.swift in Sources */,
 				A0CF3AA7261F3999004E62F9 /* GoodPicturesViewController.swift in Sources */,
 				A0CF3AB1261F3A8A004E62F9 /* PersonalInfoViewController.swift in Sources */,
