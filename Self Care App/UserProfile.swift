@@ -6,7 +6,7 @@
 //
 
 import Foundation
-public class UserProfile{
+public class UserProfile: Codable{
     var name = String()
     var age = String()
     var pronouns = String()

@@ -23,9 +23,24 @@ class PersonalInfoViewController: UIViewController {
     
     var profile = UserProfile()
     
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        if let data = UserDefaults.standard.data(forKey: "savedProfile") {
+            do {
+                // Create JSON Decoder
+                let decoder = JSONDecoder()
+                
+                // Decode Note
+                profile = try decoder.decode(UserProfile.self, from: data)
+                
+            } catch {
+                print("Unable to Decode Notes (\(error))")
+            }
+        }
         
         // Do any additional setup after loading the view.
         
@@ -50,7 +65,7 @@ class PersonalInfoViewController: UIViewController {
             
             nameDisplay.text = profile.name
             ageDisplay.text = profile.age
-            pronounDisplay.text = profile.age
+            pronounDisplay.text = profile.pronouns
             
             editInfo.setTitle("Edit Info", for: .normal)
             
@@ -66,6 +81,19 @@ class PersonalInfoViewController: UIViewController {
             pronounEnter.isHidden = false
             
             editInfo.setTitle("Save", for: .normal)
+            
+            do {
+                // Create JSON Encoder
+                let encoder = JSONEncoder()
+     
+                // Encode Note
+                let data = try encoder.encode(profile)
+                
+                // Write/Set Data
+                UserDefaults.standard.set(data, forKey: "savedProfile")
+            } catch {
+                print("Unable to Encode Array of Notes (\(error))")
+            }
             
             edit = true
         }
