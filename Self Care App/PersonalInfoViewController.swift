@@ -27,6 +27,10 @@ class PersonalInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        nameDisplay.text = profile.name
+        ageDisplay.text = profile.age
+        pronounDisplay.text = profile.pronouns
+        
         super.viewDidLoad()
         
         if let data = UserDefaults.standard.data(forKey: "savedProfile") {
@@ -68,6 +72,19 @@ class PersonalInfoViewController: UIViewController {
             pronounDisplay.text = profile.pronouns
             
             editInfo.setTitle("Edit Info", for: .normal)
+            
+            do {
+                // Create JSON Encoder
+                let encoder = JSONEncoder()
+     
+                // Encode Note
+                let data = try encoder.encode(profile)
+                
+                // Write/Set Data
+                UserDefaults.standard.set(data, forKey: "savedProfile")
+            } catch {
+                print("Unable to Encode Array of Notes (\(error))")
+            }
             
             edit = false
             
