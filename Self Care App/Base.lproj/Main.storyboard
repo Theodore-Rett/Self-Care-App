@@ -57,10 +57,6 @@
                                     <segue destination="6za-Fe-umj" kind="show" id="5jK-LZ-zs5"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z6L-U6-B0T">
-                                <rect key="frame" x="0.0" y="505" width="110" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUX-9x-ZKE">
                                 <rect key="frame" x="104" y="600" width="207" height="105"/>
                                 <color key="backgroundColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -99,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="748" y="76"/>
+            <point key="canvasLocation" x="764" y="76"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="kCb-jV-qXr">
@@ -244,7 +240,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pw-O6-d3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="A5j-g0-jBv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1508.6956521739132" y="75.669642857142847"/>
+            <point key="canvasLocation" x="1526" y="76"/>
         </scene>
         <!--Good Pictures View Controller-->
         <scene sceneID="1gs-ng-xRS">
@@ -326,7 +322,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3s-5o-JQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="GkV-du-g7j" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2204" y="76"/>
+            <point key="canvasLocation" x="2271" y="76"/>
         </scene>
         <!--Personal Info View Controller-->
         <scene sceneID="hPN-hq-UhG">
@@ -520,7 +516,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3W-Wb-5e5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="tgt-Q0-e7U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2919" y="76"/>
+            <point key="canvasLocation" x="3012" y="76"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rfw-v3-FYX">
@@ -538,7 +534,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XCl-bk-a0Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="65" y="76"/>
+            <point key="canvasLocation" x="16" y="76"/>
         </scene>
     </scenes>
     <resources>
