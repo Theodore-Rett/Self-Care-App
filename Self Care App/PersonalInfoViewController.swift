@@ -46,6 +46,8 @@ class PersonalInfoViewController: UIViewController {
             }
         }
         
+        profile = defaults.object(forKey: "savedProfile") as! UserProfile
+        
         // Do any additional setup after loading the view.
         
     }
@@ -53,8 +55,6 @@ class PersonalInfoViewController: UIViewController {
     @IBAction func editInfoButton(_ sender: UIButton) {
         
         if(edit){
-            
-            
             profile.changeName(inName: nameEnter.text!)
             profile.changeAge(inAge: ageEnter.text!)
             profile.changePronouns(inPronouns: pronounEnter.text!)
@@ -115,7 +115,6 @@ class PersonalInfoViewController: UIViewController {
             edit = true
         }
     }
-    
     /*
     // MARK: - Navigation
 
@@ -125,5 +124,4 @@ class PersonalInfoViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
