@@ -113,8 +113,16 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
-    func sort(){
+    func sort(toSort : [EventMaker]){
         
+        var n = toSort[0].time
+        
+        for event in toSort {
+            if (event.time < n){
+                n = event.time
+            }
+        }
+         
     }
     
     

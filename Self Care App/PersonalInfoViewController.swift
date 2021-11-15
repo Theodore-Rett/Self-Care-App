@@ -27,10 +27,6 @@ class PersonalInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        nameDisplay.text = profile.name
-        ageDisplay.text = profile.age
-        pronounDisplay.text = profile.pronouns
-        
         super.viewDidLoad()
         
         if let data = UserDefaults.standard.data(forKey: "savedProfile") {
@@ -46,7 +42,11 @@ class PersonalInfoViewController: UIViewController {
             }
         }
         
-        profile = defaults.object(forKey: "savedProfile") as! UserProfile
+        profile = (defaults.object(forKey: "savedProfile") as? UserProfile ?? profile)
+
+        nameDisplay.text = profile.name
+        ageDisplay.text = profile.age
+        pronounDisplay.text = profile.pronouns
         
         // Do any additional setup after loading the view.
         

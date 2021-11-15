@@ -17,24 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Care of Yourself!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Htd-TS-SQR">
-                                <rect key="frame" x="108" y="125" width="199" height="244"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="199" id="HEU-5j-HrI"/>
-                                    <constraint firstAttribute="height" constant="244" id="YD8-RD-4Hq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="61"/>
-                                <color key="textColor" red="0.314306609798919" green="0.42679839435155131" blue="0.57425972465034958" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5f-5G-eSC">
                                 <rect key="frame" x="104" y="377" width="207" height="105"/>
                                 <color key="backgroundColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="207" id="7ur-KN-GLA"/>
-                                    <constraint firstAttribute="height" constant="105" id="TfC-3W-uZF"/>
+                                    <constraint firstAttribute="width" secondItem="w5f-5G-eSC" secondAttribute="height" multiplier="69:35" id="HKK-zJ-gaD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="My Schedule">
                                     <color key="titleColor" red="1" green="0.99745129637423613" blue="0.99474414940542843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -46,10 +35,9 @@
                                 <rect key="frame" x="104" y="490" width="207" height="102"/>
                                 <color key="backgroundColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="207" id="23c-mW-6pb"/>
-                                    <constraint firstAttribute="height" constant="102" id="aY3-u1-t4T"/>
+                                    <constraint firstAttribute="width" secondItem="qMU-03-dpa" secondAttribute="height" multiplier="69:34" id="riO-Ip-pLy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Good Pictures">
                                     <color key="titleColor" red="1" green="0.99745129639999996" blue="0.9947441494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -61,10 +49,9 @@
                                 <rect key="frame" x="104" y="600" width="207" height="105"/>
                                 <color key="backgroundColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="207" id="Cw1-4e-S8j"/>
-                                    <constraint firstAttribute="height" constant="105" id="mbZ-eg-5e5"/>
+                                    <constraint firstAttribute="width" secondItem="UUX-9x-ZKE" secondAttribute="height" multiplier="69:35" id="zpE-lr-lcw"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="My Info">
                                     <color key="titleColor" red="1" green="0.99745129639999996" blue="0.9947441494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -72,30 +59,39 @@
                                     <segue destination="taK-kw-Q0s" kind="show" id="tVh-0G-hiu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Care of Yourself!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Htd-TS-SQR">
+                                <rect key="frame" x="64" y="125" width="286" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Htd-TS-SQR" secondAttribute="height" multiplier="143:122" id="Fh6-2m-WYU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" red="0.314306609798919" green="0.42679839435155131" blue="0.57425972465034958" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.80125524441926887" green="0.92906310631068501" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Htd-TS-SQR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="0Bg-Ri-LHX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qMU-03-dpa" secondAttribute="trailing" constant="103" id="AKH-DX-tFD"/>
-                            <constraint firstItem="UUX-9x-ZKE" firstAttribute="top" secondItem="qMU-03-dpa" secondAttribute="bottom" constant="8" symbolic="YES" id="BTb-X4-8KH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UUX-9x-ZKE" secondAttribute="bottom" constant="157" id="DYP-6S-JhX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w5f-5G-eSC" secondAttribute="trailing" constant="103" id="I3M-XQ-J4T"/>
-                            <constraint firstItem="UUX-9x-ZKE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="Keu-Al-aoJ"/>
-                            <constraint firstItem="qMU-03-dpa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="TfF-aF-iHG"/>
-                            <constraint firstItem="qMU-03-dpa" firstAttribute="top" secondItem="w5f-5G-eSC" secondAttribute="bottom" constant="8" symbolic="YES" id="aOC-57-Pyo"/>
-                            <constraint firstItem="w5f-5G-eSC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="acQ-vM-xv7"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Htd-TS-SQR" secondAttribute="trailing" constant="107" id="cBs-Rv-fxA"/>
-                            <constraint firstItem="Htd-TS-SQR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="dIh-g2-INS"/>
-                            <constraint firstItem="w5f-5G-eSC" firstAttribute="top" secondItem="Htd-TS-SQR" secondAttribute="bottom" constant="8" symbolic="YES" id="eHx-eV-F2P"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UUX-9x-ZKE" secondAttribute="trailing" constant="103" id="mhd-mt-2Pu"/>
+                            <constraint firstItem="Htd-TS-SQR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="2jh-pz-c0u"/>
+                            <constraint firstItem="UUX-9x-ZKE" firstAttribute="top" secondItem="qMU-03-dpa" secondAttribute="bottom" constant="8" symbolic="YES" id="92q-9m-6cW"/>
+                            <constraint firstItem="qMU-03-dpa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="AYL-vJ-oht"/>
+                            <constraint firstItem="w5f-5G-eSC" firstAttribute="top" secondItem="Htd-TS-SQR" secondAttribute="bottom" constant="8" symbolic="YES" id="HOZ-RC-apx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UUX-9x-ZKE" secondAttribute="bottom" constant="157" id="ZGl-jn-iI0"/>
+                            <constraint firstItem="Htd-TS-SQR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="bta-4X-VPG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UUX-9x-ZKE" secondAttribute="trailing" constant="103" id="gMg-DD-f65"/>
+                            <constraint firstItem="w5f-5G-eSC" firstAttribute="top" secondItem="Htd-TS-SQR" secondAttribute="bottom" constant="8" symbolic="YES" id="iGM-Vf-11t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Htd-TS-SQR" secondAttribute="trailing" constant="64" id="iOC-Sa-hDF"/>
+                            <constraint firstItem="UUX-9x-ZKE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="opf-T2-gBq"/>
+                            <constraint firstItem="w5f-5G-eSC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="t6D-22-JO1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w5f-5G-eSC" secondAttribute="trailing" constant="103" id="thF-Eh-nV3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qMU-03-dpa" secondAttribute="trailing" constant="103" id="xxk-g1-qxt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="z6A-Ig-7JR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="76"/>
+            <point key="canvasLocation" x="763.768115942029" y="75.669642857142847"/>
         </scene>
         <!--Schedule View Controller-->
         <scene sceneID="kCb-jV-qXr">
@@ -115,23 +111,23 @@
                                 <color key="sectionIndexBackgroundColor" red="0.80125524439999996" green="0.9290631063" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" textLabel="Vgf-87-Tgj" detailTextLabel="87T-T5-pDS" style="IBUITableViewCellStyleValue1" id="Tt2-MV-nUS">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="61.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tt2-MV-nUS" id="Rod-UB-Fq1">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="61.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vgf-87-Tgj">
-                                                    <rect key="frame" x="20" y="13" width="32" height="18.5"/>
+                                                    <rect key="frame" x="20" y="16" width="46.5" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="textColor" red="0.2876626551" green="0.42777448890000003" blue="0.58825641870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="87T-T5-pDS">
-                                                    <rect key="frame" x="353" y="13" width="41" height="18.5"/>
+                                                    <rect key="frame" x="332" y="16" width="62" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="textColor" red="0.2876626551" green="0.42777448890000003" blue="0.58825641870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -149,7 +145,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="eN5-zJ-u5i"/>
                                     <constraint firstAttribute="height" constant="34" id="u7t-y3-RQg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUy-6a-tRq">
@@ -159,7 +155,7 @@
                                     <constraint firstAttribute="width" constant="111" id="FeI-m2-aIY"/>
                                     <constraint firstAttribute="height" constant="62" id="ith-JM-r8W"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="1" green="0.99745129639999996" blue="0.9947441494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -174,7 +170,7 @@
                                     <constraint firstAttribute="width" constant="111" id="670-yf-7f8"/>
                                     <constraint firstAttribute="height" constant="62" id="YZG-fR-8Vu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="1" green="0.99745129639999996" blue="0.9947441494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -189,7 +185,7 @@
                                     <constraint firstAttribute="width" constant="111" id="NCE-r6-2fe"/>
                                     <constraint firstAttribute="height" constant="62" id="X5I-0V-v0l"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Add">
                                     <color key="titleColor" red="1" green="0.99745129639999996" blue="0.9947441494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -256,7 +252,7 @@
                                     <constraint firstAttribute="height" constant="136" id="Cxz-Au-4F0"/>
                                     <constraint firstAttribute="width" constant="286" id="PiN-hy-FhW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="61"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -274,7 +270,7 @@
                                     <constraint firstAttribute="width" constant="111" id="WxU-gv-M6z"/>
                                     <constraint firstAttribute="height" constant="62" id="fe9-fW-fMr"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="1" green="0.99745129639999996" blue="0.9947441494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -289,7 +285,7 @@
                                     <constraint firstAttribute="width" constant="111" id="R6D-DU-iqK"/>
                                     <constraint firstAttribute="height" constant="62" id="cnt-99-KUB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="New">
                                     <color key="titleColor" red="1" green="0.99745129639999996" blue="0.9947441494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -365,7 +361,7 @@
                                     <constraint firstAttribute="width" constant="96" id="IRZ-dq-Hjl"/>
                                     <constraint firstAttribute="height" constant="52" id="kR7-6M-Vd9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -375,7 +371,7 @@
                                     <constraint firstAttribute="width" constant="96" id="6YR-Yu-G9c"/>
                                     <constraint firstAttribute="height" constant="52" id="Wg6-Fo-zmX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -385,7 +381,7 @@
                                     <constraint firstAttribute="width" constant="152" id="90i-0q-mvG"/>
                                     <constraint firstAttribute="height" constant="52" id="lny-dw-IZn"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="textColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -425,7 +421,7 @@
                                     <constraint firstAttribute="width" constant="286" id="KAY-dW-dxR"/>
                                     <constraint firstAttribute="height" constant="136" id="YcD-ki-xtz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="61"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -438,7 +434,7 @@
                                     <constraint firstAttribute="width" constant="111" id="eVa-2R-J8a"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="111" id="fuH-ag-dzs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="1" green="0.99745129639999996" blue="0.9947441494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -453,7 +449,7 @@
                                     <constraint firstAttribute="width" constant="111" id="CjS-7r-8cO"/>
                                     <constraint firstAttribute="height" constant="62" id="fpL-xT-45M"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Edit Info">
                                     <color key="titleColor" red="1" green="0.99745129639999996" blue="0.9947441494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
