@@ -44,9 +44,9 @@ class PersonalInfoViewController: UIViewController {
         
         profile = (defaults.object(forKey: "savedProfile") as? UserProfile ?? profile)
 
-        nameDisplay.text = profile.name
-        ageDisplay.text = profile.age
-        pronounDisplay.text = profile.pronouns
+        nameDisplay.text = "Name: " + profile.name
+        ageDisplay.text = "Age: " + profile.age
+        pronounDisplay.text = "Pronouns: " + profile.pronouns
         
         // Do any additional setup after loading the view.
         
@@ -59,17 +59,13 @@ class PersonalInfoViewController: UIViewController {
             profile.changeAge(inAge: ageEnter.text!)
             profile.changePronouns(inPronouns: pronounEnter.text!)
             
-            nameDisplay.isHidden = false
-            ageDisplay.isHidden = false
-            pronounDisplay.isHidden = false
-            
             nameEnter.isHidden = true
             ageEnter.isHidden = true
             pronounEnter.isHidden = true
             
-            nameDisplay.text = profile.name
-            ageDisplay.text = profile.age
-            pronounDisplay.text = profile.pronouns
+            nameDisplay.text = "Name: " + profile.name
+            ageDisplay.text = "Age: " + profile.age
+            pronounDisplay.text = "Pronouns: " + profile.pronouns
             
             editInfo.setTitle("Edit Info", for: .normal)
             
@@ -89,9 +85,9 @@ class PersonalInfoViewController: UIViewController {
             edit = false
             
         } else{
-            nameDisplay.isHidden = true
-            ageDisplay.isHidden = true
-            pronounDisplay.isHidden = true
+            nameDisplay.text = "Name: "
+            ageDisplay.text = "Age: "
+            pronounDisplay.text = "Pronouns: "
             
             nameEnter.isHidden = false
             ageEnter.isHidden = false
