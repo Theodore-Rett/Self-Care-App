@@ -58,7 +58,7 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
             schedule.append(EventMaker(inName: nameEnter.text!, inTime: timeInput.date))
             
             
-            
+            schedule = schedule.sorted(by: { $0.time < $1.time })
             
             listDisplay.reloadData()
         }
@@ -112,19 +112,6 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
-    
-    func sort(toSort : [EventMaker]){
-        
-        var n = toSort[0].time
-        
-        for event in toSort {
-            if (event.time < n){
-                n = event.time
-            }
-        }
-         
-    }
-    
     
 //    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
 //        if(editingStyle == .delete){

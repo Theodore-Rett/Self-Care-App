@@ -26,11 +26,11 @@
                                 <color key="textColor" red="0.314306609798919" green="0.42679839435155131" blue="0.57425972465034958" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="xE7-PG-t17">
-                                <rect key="frame" x="131" y="348" width="152" height="272"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xE7-PG-t17">
+                                <rect key="frame" x="100" y="348" width="214" height="444"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="w5f-5G-eSC">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="42"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="w5f-5G-eSC">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="128"/>
                                         <color key="backgroundColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <state key="normal" title="My Schedule">
@@ -41,7 +41,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qMU-03-dpa">
-                                        <rect key="frame" x="0.0" y="115" width="152" height="42"/>
+                                        <rect key="frame" x="0.0" y="158" width="214" height="128"/>
                                         <color key="backgroundColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <state key="normal" title="Good Pictures">
@@ -52,7 +52,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UUX-9x-ZKE">
-                                        <rect key="frame" x="0.0" y="230" width="152" height="42"/>
+                                        <rect key="frame" x="0.0" y="316" width="214" height="128"/>
                                         <color key="backgroundColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <state key="normal" title="My Info">
@@ -63,17 +63,14 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="xE7-PG-t17" secondAttribute="height" multiplier="19:34" id="qXp-yX-HdY"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.80125524441926887" green="0.92906310631068501" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xE7-PG-t17" secondAttribute="bottom" constant="242" id="DbW-8V-qUH"/>
-                            <constraint firstItem="xE7-PG-t17" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="V0c-0f-VZz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xE7-PG-t17" secondAttribute="trailing" constant="131" id="W3A-v7-Iwp"/>
+                            <constraint firstItem="xE7-PG-t17" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.495536" id="AKk-p4-QaJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xE7-PG-t17" secondAttribute="trailing" constant="100" id="Fu0-xL-RdP"/>
+                            <constraint firstItem="xE7-PG-t17" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="T2b-nt-oFU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Htd-TS-SQR" secondAttribute="trailing" constant="63" id="a83-Vg-1PC"/>
                             <constraint firstItem="Htd-TS-SQR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="b9W-32-3Mq"/>
                             <constraint firstItem="xE7-PG-t17" firstAttribute="top" secondItem="Htd-TS-SQR" secondAttribute="bottom" constant="55" id="cgs-jz-pwg"/>
@@ -107,14 +104,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vgf-87-Tgj">
-                                                    <rect key="frame" x="20.000000000000004" y="16" width="46.333333333333336" height="30"/>
+                                                    <rect key="frame" x="20" y="15" width="52" height="33.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="textColor" red="0.2876626551" green="0.42777448890000003" blue="0.58825641870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="87T-T5-pDS">
-                                                    <rect key="frame" x="332" y="16" width="62" height="30"/>
+                                                    <rect key="frame" x="324.33333333333331" y="15" width="69.666666666666671" height="33.666666666666664"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="textColor" red="0.2876626551" green="0.42777448890000003" blue="0.58825641870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -401,7 +398,6 @@
                             <constraint firstItem="M7j-xK-lJh" firstAttribute="top" secondItem="6Hx-Lx-hBo" secondAttribute="bottom" constant="45" id="mcP-Me-QDl"/>
                             <constraint firstItem="M7j-xK-lJh" firstAttribute="height" secondItem="kBv-Dj-nc5" secondAttribute="height" multiplier="0.0334821" id="oG6-CS-yfa"/>
                             <constraint firstItem="95s-0g-kt4" firstAttribute="trailing" secondItem="C58-BG-qpi" secondAttribute="trailing" constant="64" id="pUY-Mu-32S"/>
-                            <constraint firstItem="822-cc-I8F" firstAttribute="width" secondItem="kBv-Dj-nc5" secondAttribute="width" multiplier="0.301932" id="q7Y-IU-H9k"/>
                             <constraint firstItem="C58-BG-qpi" firstAttribute="top" secondItem="Hr3-iU-M5d" secondAttribute="bottom" constant="68" id="vg6-yk-woe"/>
                             <constraint firstItem="95s-0g-kt4" firstAttribute="trailing" secondItem="4pf-nB-tYV" secondAttribute="trailing" constant="64" id="xj6-O6-UdU"/>
                             <constraint firstItem="95s-0g-kt4" firstAttribute="trailing" secondItem="Ju7-CE-ZV7" secondAttribute="trailing" constant="64" id="xny-Ym-Lm5"/>
