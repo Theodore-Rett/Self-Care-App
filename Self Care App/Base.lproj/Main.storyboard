@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vvy-KX-lHM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vvy-KX-lHM">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,12 +44,9 @@
                                         <rect key="frame" x="0.0" y="158" width="214" height="128"/>
                                         <color key="backgroundColor" red="0.31430660980000003" green="0.4267983944" blue="0.57425972469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                        <state key="normal" title="Good Pictures">
+                                        <state key="normal" title="Good Pictures (Coming Soon)">
                                             <color key="titleColor" red="1" green="0.99745129639999996" blue="0.9947441494" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="6za-Fe-umj" kind="show" id="5jK-LZ-zs5"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="UUX-9x-ZKE">
                                         <rect key="frame" x="0.0" y="316" width="214" height="128"/>
@@ -104,14 +101,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vgf-87-Tgj">
-                                                    <rect key="frame" x="20" y="15" width="52" height="33.666666666666664"/>
+                                                    <rect key="frame" x="20.000000000000004" y="16" width="46.333333333333336" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="textColor" red="0.2876626551" green="0.42777448890000003" blue="0.58825641870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="87T-T5-pDS">
-                                                    <rect key="frame" x="324.33333333333331" y="15" width="69.666666666666671" height="33.666666666666664"/>
+                                                    <rect key="frame" x="332" y="16" width="62" height="30"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                     <color key="textColor" red="0.2876626551" green="0.42777448890000003" blue="0.58825641870000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -286,7 +283,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3s-5o-JQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="GkV-du-g7j" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2269.5652173913045" y="75.669642857142847"/>
+            <point key="canvasLocation" x="2283" y="76"/>
         </scene>
         <!--Personal Info View Controller-->
         <scene sceneID="hPN-hq-UhG">
@@ -382,7 +379,6 @@
                             <constraint firstItem="6Hx-Lx-hBo" firstAttribute="top" secondItem="Ju7-CE-ZV7" secondAttribute="bottom" constant="47" id="I2T-bS-kfm"/>
                             <constraint firstItem="Ju7-CE-ZV7" firstAttribute="leading" secondItem="95s-0g-kt4" secondAttribute="leading" constant="149" id="Icp-aj-drv"/>
                             <constraint firstItem="C58-BG-qpi" firstAttribute="height" secondItem="kBv-Dj-nc5" secondAttribute="height" multiplier="0.112723" id="NIg-86-3nP"/>
-                            <constraint firstItem="C58-BG-qpi" firstAttribute="width" secondItem="kBv-Dj-nc5" secondAttribute="width" multiplier="0.301932" id="W4I-uV-dst"/>
                             <constraint firstItem="4pf-nB-tYV" firstAttribute="height" secondItem="kBv-Dj-nc5" secondAttribute="height" multiplier="0.0334821" id="We7-E4-Piw"/>
                             <constraint firstItem="95s-0g-kt4" firstAttribute="trailing" secondItem="Hr3-iU-M5d" secondAttribute="trailing" constant="64" id="aWL-RP-QxK"/>
                             <constraint firstItem="4pf-nB-tYV" firstAttribute="leading" secondItem="95s-0g-kt4" secondAttribute="leading" constant="58" id="bTh-HJ-Uab"/>

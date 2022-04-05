@@ -120,13 +120,13 @@
 				20016FD327318307006AE0C4 /* UserProfile.swift */,
 				A0CF3ABA26248458004E62F9 /* EventMaker.swift */,
 				A0CF3AB5261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift */,
+				A0CF3A74261C9295004E62F9 /* Self_Care_App.xcdatamodeld */,
 				A0CF3AB0261F3A8A004E62F9 /* PersonalInfoViewController.swift */,
 				A0CF3AA6261F3999004E62F9 /* GoodPicturesViewController.swift */,
 				A0CF3AA1261F3925004E62F9 /* ScheduleViewController.swift */,
 				A0CF3A77261C9296004E62F9 /* Assets.xcassets */,
 				A0CF3A79261C9296004E62F9 /* LaunchScreen.storyboard */,
 				A0CF3A7C261C9296004E62F9 /* Info.plist */,
-				A0CF3A74261C9295004E62F9 /* Self_Care_App.xcdatamodeld */,
 			);
 			path = "Self Care App";
 			sourceTree = "<group>";
