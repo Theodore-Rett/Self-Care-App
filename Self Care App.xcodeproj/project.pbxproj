@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		20016FD427318307006AE0C4 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20016FD327318307006AE0C4 /* UserProfile.swift */; };
+		20E587FD27FDD8E900F2AE05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20E587FC27FDD8E900F2AE05 /* GoogleService-Info.plist */; };
+		20E587FE27FDD8E900F2AE05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20E587FC27FDD8E900F2AE05 /* GoogleService-Info.plist */; };
+		20E587FF27FDD8E900F2AE05 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20E587FC27FDD8E900F2AE05 /* GoogleService-Info.plist */; };
 		A0CF3A6C261C9295004E62F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3A6B261C9295004E62F9 /* AppDelegate.swift */; };
 		A0CF3A6E261C9295004E62F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3A6D261C9295004E62F9 /* SceneDelegate.swift */; };
 		A0CF3A70261C9295004E62F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3A6F261C9295004E62F9 /* ViewController.swift */; };
@@ -43,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		20016FD327318307006AE0C4 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		20E587FC27FDD8E900F2AE05 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A0CF3A68261C9295004E62F9 /* Self Care App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Self Care App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CF3A6B261C9295004E62F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0CF3A6D261C9295004E62F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 				A0CF3A77261C9296004E62F9 /* Assets.xcassets */,
 				A0CF3A79261C9296004E62F9 /* LaunchScreen.storyboard */,
 				A0CF3A7C261C9296004E62F9 /* Info.plist */,
+				20E587FC27FDD8E900F2AE05 /* GoogleService-Info.plist */,
 			);
 			path = "Self Care App";
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0CF3A7B261C9296004E62F9 /* LaunchScreen.storyboard in Resources */,
+				20E587FD27FDD8E900F2AE05 /* GoogleService-Info.plist in Resources */,
 				A0CF3A78261C9296004E62F9 /* Assets.xcassets in Resources */,
 				A0CF3A73261C9295004E62F9 /* Main.storyboard in Resources */,
 			);
@@ -262,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E587FE27FDD8E900F2AE05 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E587FF27FDD8E900F2AE05 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
