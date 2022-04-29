@@ -111,6 +111,15 @@ class PersonalInfoViewController: UIViewController {
             edit = true
         }
     }
+    
+    @IBAction func showPopUpButton(_ sender: UIButton) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LogInViewController") as! LogInViewController
+        self.addChild(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParent: self)
+    }
+    
     /*
     // MARK: - Navigation
 

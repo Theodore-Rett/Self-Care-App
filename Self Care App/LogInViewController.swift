@@ -10,6 +10,7 @@ import UIKit
 class LogInViewController: UIViewController {
 
     @IBOutlet weak var DisplayText: UILabel!
+    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var userEnter: UITextField!
     @IBOutlet weak var passwordEnter: UITextField!
     @IBOutlet weak var enterButton: UIButton!
@@ -20,18 +21,25 @@ class LogInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        errorLabel.isHidden = true
+        
     }
     
     @IBAction func changeSetting(_ sender: UIButton) {
+        
+        //check witch mode need to switch to
         if(loginCheck){
+            
+            //login -> user
             loginCheck = false
             DisplayText.text = "Create User"
             enterButton.setTitle("Create User", for: UIControl.State())
             changeSettingLabel.text = "Already have an account? Login here:"
             changeSettingButton.setTitle("Login", for: UIControl.State())
         } else{
+            
+            //user -> login
             loginCheck = true
             DisplayText.text = "Login"
             enterButton.setTitle("Login", for: UIControl.State())
@@ -40,14 +48,97 @@ class LogInViewController: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
+    @IBAction func SubmitButton(_ sender: UIButton) {
+        
+        //updating userList
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let docRef2 = AppData.db.collection("testCollection").document("User Name Array")
+        
+        //getting user list from data base
+        docRef2.getDocument { (document, error) in
+            if let document = document, document.exists {
+                let dataDescription = document.data()!
+                print("Document data: \(dataDescription)")
+                AppData.userList = dataDescription.first!.value as! [String]
+            } else {
+                print("Document does not exist")
+            }
+        }
+        
+        print("USER LIST HERE \(AppData.userList)")
+        
+        //checking if log in or new user
+        if(loginCheck == true){
+            
+            //checking if text boxes have an input
+            if(userEnter.text == "" || passwordEnter.text == ""){
+                errorLabel.isHidden = false
+                errorLabel.text = "Please enter a username and password"
+            } else{
+                
+                //cheking if userEnter is an existing log in
+                if(AppData.userList.contains(userEnter.text!)){
+                    errorLabel.isHidden = true
+                    let tempUser = userEnter.text!
+                    var password = ""
+                    
+                    //getting log in from firebase
+
+                    let docRef = AppData.db.collection("testCollection").document(tempUser)
+                    
+                    //getting password from data base
+                    docRef.getDocument { (document, error) in
+                        if let document = document, document.exists {
+                            let dataDescription = document.data()!
+                            print("Document data: \(dataDescription)")
+                            password = dataDescription.first!.value as! String
+                            print("PASSWORD HERE \(password)")
+                        } else {
+                            print("Document does not exist")
+                        }
+                    }
+                    
+                    //checking if correct password
+                    if(passwordEnter.text == password){
+                        errorLabel.isHidden = true
+                        AppData.currentUser = tempUser
+                    }else{
+                        errorLabel.isHidden = false
+                        errorLabel.text = "Please try again."
+                    }
+                }else{
+                    errorLabel.isHidden = false
+                    errorLabel.text = "Please try again."
+                }
+            }
+        } else if(loginCheck == false){
+            
+            //checking if text boxes have input
+            if(userEnter.text == "" || passwordEnter.text == ""){
+                errorLabel.isHidden = false
+                errorLabel.text = "Please enter a username and password."
+            }else{
+                
+                //checking if username already taken
+                if(AppData.userList.contains(userEnter.text!)){
+                    errorLabel.isHidden = false
+                    errorLabel.text = "Username already taken."
+                } else{
+                    
+                    //adding new user to local data
+                    AppData.currentUser = userEnter.text!
+                    AppData.userList.append(userEnter.text!)
+                    
+                    //sending data to firebase
+                    AppData.db.collection("User Name Lists").document("User Name Array").setData(["userList" : AppData.userList], merge: false)
+                    AppData.db.collection("User Name Lists").document(AppData.currentUser).setData(["password" : passwordEnter.text!], merge : true)
+                }
+            }
+            
+        }
     }
-    */
-
+    
+    @IBAction func closePopUp(_ sender: UIButton) {
+        self.view.removeFromSuperview()
+    }
 }
