@@ -52,20 +52,19 @@ class LogInViewController: UIViewController {
         
         //updating userList
 
-        let docRef2 = AppData.db.collection("testCollection").document("User Name Array")
+        let docRef2 = AppData.db.collection("User Name Lists").document(AppData.currentUser)
         
         //getting user list from data base
         docRef2.getDocument { (document, error) in
             if let document = document, document.exists {
                 let dataDescription = document.data()!
-                print("Document data: \(dataDescription)")
+
                 AppData.userList = dataDescription.first!.value as! [String]
+                
             } else {
                 print("Document does not exist")
             }
         }
-        
-        print("USER LIST HERE \(AppData.userList)")
         
         //checking if log in or new user
         if(loginCheck == true){
@@ -92,7 +91,6 @@ class LogInViewController: UIViewController {
                             let dataDescription = document.data()!
                             print("Document data: \(dataDescription)")
                             password = dataDescription.first!.value as! String
-                            print("PASSWORD HERE \(password)")
                         } else {
                             print("Document does not exist")
                         }
