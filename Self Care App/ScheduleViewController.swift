@@ -14,7 +14,6 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var nameEnter: UITextField!
     @IBOutlet weak var timeInput: UIDatePicker!
     
-    //var schedule : [String : Date] = [:]
     
     var schedule = [EventMaker]()
     
@@ -49,6 +48,16 @@ class ScheduleViewController: UIViewController, UITableViewDelegate, UITableView
                 print("Unable to Decode Notes (\(error))")
             }
         }
+        
+        //DATA FROM FIREBASE
+        
+        //getting name
+        
+        //getting age
+        
+        
+        
+        
     }
     
     @IBAction func addButton(_ sender: UIButton) {

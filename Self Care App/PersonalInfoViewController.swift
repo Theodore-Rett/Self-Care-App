@@ -29,6 +29,10 @@ class PersonalInfoViewController: UIViewController {
         
         super.viewDidLoad()
         
+        //getting User Profile from firebase
+        
+        
+        
         if let data = UserDefaults.standard.data(forKey: "savedProfile") {
             do {
                 // Create JSON Decoder
@@ -47,9 +51,6 @@ class PersonalInfoViewController: UIViewController {
         nameDisplay.text = "Name: " + profile.name
         ageDisplay.text = "Age: " + profile.age
         pronounDisplay.text = "Pronouns: " + profile.pronouns
-        
-        // Do any additional setup after loading the view.
-        
     }
     
     @IBAction func editInfoButton(_ sender: UIButton) {

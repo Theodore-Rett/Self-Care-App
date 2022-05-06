@@ -8,7 +8,7 @@
 import UIKit
 
 class LogInViewController: UIViewController {
-
+    
     @IBOutlet weak var DisplayText: UILabel!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var userEnter: UITextField!
@@ -51,14 +51,14 @@ class LogInViewController: UIViewController {
     @IBAction func SubmitButton(_ sender: UIButton) {
         
         //updating userList
-
+        
         let docRef2 = AppData.db.collection("User Name Lists").document("User Name Array")
         
         //getting user list from data base
         docRef2.getDocument { (document, error) in
             if let document = document, document.exists {
                 let dataDescription = document.data()!
-
+                
                 AppData.userList = dataDescription.first!.value as! [String]
                 
                 print(AppData.userList)
@@ -81,7 +81,7 @@ class LogInViewController: UIViewController {
                             var password = ""
                             
                             //getting log in from firebase
-
+                            
                             let docRef = AppData.db.collection("User Name Lists").document(tempUser)
                             
                             //getting password from data base
@@ -103,7 +103,6 @@ class LogInViewController: UIViewController {
                                     
                                 } else {
                                     print("Document does not exist")
-                                    print("THIS ERROR")
                                 }
                             }
                             
@@ -112,36 +111,35 @@ class LogInViewController: UIViewController {
                             self.errorLabel.text = "Please try again."
                         }
                     }
-                
+                } else if(self.loginCheck == false){
+                    
+                    //checking if text boxes have input
+                    if(self.userEnter.text == "" || self.passwordEnter.text == ""){
+                        self.errorLabel.isHidden = false
+                        self.errorLabel.text = "Please enter a username and password."
+                    }else{
+                        
+                        //checking if username already taken
+                        if(AppData.userList.contains(self.userEnter.text!)){
+                            self.errorLabel.isHidden = false
+                            self.errorLabel.text = "Username already taken."
+                        } else{
+                            
+                            //adding new user to local data
+                            AppData.currentUser = self.userEnter.text!
+                            AppData.userList.append(self.userEnter.text!)
+                            
+                            //sending data to firebase
+                            AppData.db.collection("User Name Lists").document("User Name Array").setData(["userList" : AppData.userList], merge: false)
+                            AppData.db.collection("User Name Lists").document(AppData.currentUser).setData(["password" : self.passwordEnter.text!], merge : true)
+                        }
+                    }
+                    
+                }
             } else {
                 print("Document does not exist")
             }
-            } else if(self.loginCheck == false){
-            
-            //checking if text boxes have input
-                if(self.userEnter.text == "" || self.passwordEnter.text == ""){
-                self.errorLabel.isHidden = false
-                self.errorLabel.text = "Please enter a username and password."
-            }else{
-                
-                //checking if username already taken
-                if(AppData.userList.contains(self.userEnter.text!)){
-                    self.errorLabel.isHidden = false
-                    self.errorLabel.text = "Username already taken."
-                } else{
-                    
-                    //adding new user to local data
-                    AppData.currentUser = self.userEnter.text!
-                    AppData.userList.append(self.userEnter.text!)
-                    
-                    //sending data to firebase
-                    AppData.db.collection("User Name Lists").document("User Name Array").setData(["userList" : AppData.userList], merge: false)
-                    AppData.db.collection("User Name Lists").document(AppData.currentUser).setData(["password" : self.passwordEnter.text!], merge : true)
-                }
-            }
-            
         }
-    }
     }
     
     @IBAction func closePopUp(_ sender: UIButton) {
