@@ -32,7 +32,6 @@
 		A0CF3A91261C9297004E62F9 /* Self_Care_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3A90261C9297004E62F9 /* Self_Care_AppUITests.swift */; };
 		A0CF3AA2261F3925004E62F9 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3AA1261F3925004E62F9 /* ScheduleViewController.swift */; };
 		A0CF3AB1261F3A8A004E62F9 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3AB0261F3A8A004E62F9 /* PersonalInfoViewController.swift */; };
-		A0CF3AB6261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3AB5261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift */; };
 		A0CF3ABB26248458004E62F9 /* EventMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF3ABA26248458004E62F9 /* EventMaker.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +73,6 @@
 		A0CF3A92261C9297004E62F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0CF3AA1261F3925004E62F9 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		A0CF3AB0261F3A8A004E62F9 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
-		A0CF3AB5261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoEditorViewController.swift; sourceTree = "<group>"; };
 		A0CF3ABA26248458004E62F9 /* EventMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +140,6 @@
 				2099DB3C28047B9600A5B32F /* LogInViewController.swift */,
 				20016FD327318307006AE0C4 /* UserProfile.swift */,
 				A0CF3ABA26248458004E62F9 /* EventMaker.swift */,
-				A0CF3AB5261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift */,
 				A0CF3A74261C9295004E62F9 /* Self_Care_App.xcdatamodeld */,
 				A0CF3AB0261F3A8A004E62F9 /* PersonalInfoViewController.swift */,
 				A0CF3AA1261F3925004E62F9 /* ScheduleViewController.swift */,
@@ -319,7 +316,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0CF3AB6261F3AC1004E62F9 /* PersonalInfoEditorViewController.swift in Sources */,
 				A0CF3AA2261F3925004E62F9 /* ScheduleViewController.swift in Sources */,
 				20016FD427318307006AE0C4 /* UserProfile.swift in Sources */,
 				A0CF3A70261C9295004E62F9 /* ViewController.swift in Sources */,

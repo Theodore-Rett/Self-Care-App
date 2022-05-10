@@ -30,7 +30,53 @@ class PersonalInfoViewController: UIViewController {
         super.viewDidLoad()
         
         //getting User Profile from firebase
+        let docRef = AppData.db.collection("User Name Lists").document(AppData.currentUser)
         
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                
+                let dataDescription = document.data()!
+                
+                print("Document data: \(dataDescription)")
+                
+                self.profile.name = dataDescription.first!.value as! String
+        
+            } else {
+                print("Document does not exist")
+            }
+        }
+        
+        //getting user age from firebase
+        
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                
+                let dataDescription = document.data()!
+                
+                print("Document data: \(dataDescription)")
+                
+                self.profile.age = dataDescription.first!.value as! String
+        
+            } else {
+                print("Document does not exist")
+            }
+        }
+        
+        //getting user pronouns from firebase
+        
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                
+                let dataDescription = document.data()!
+                
+                print("Document data: \(dataDescription)")
+                
+                self.profile.name = dataDescription.first!.value as! String
+        
+            } else {
+                print("Document does not exist")
+            }
+        }
         
         
         if let data = UserDefaults.standard.data(forKey: "savedProfile") {

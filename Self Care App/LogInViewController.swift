@@ -132,6 +132,12 @@ class LogInViewController: UIViewController {
                             //sending data to firebase
                             AppData.db.collection("User Name Lists").document("User Name Array").setData(["userList" : AppData.userList], merge: false)
                             AppData.db.collection("User Name Lists").document(AppData.currentUser).setData(["password" : self.passwordEnter.text!], merge : true)
+                            
+                            //creating default user
+                            AppData.db.collection("User Name Lists").document(AppData.currentUser).setData(["name" : "no name"], merge: true)
+                            AppData.db.collection("User Name Lists").document(AppData.currentUser).setData(["pronouns" : "no name"], merge: true)
+                            AppData.db.collection("User Name Lists").document(AppData.currentUser).setData(["age" : "no name"], merge: true)
+                            
                         }
                     }
                     
